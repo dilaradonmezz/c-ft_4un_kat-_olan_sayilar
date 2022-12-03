@@ -1,0 +1,19 @@
+//Java döngüler ile tek bir sayı girilene kadar kullanıcıdan girişleri kabul eden ve girilen değerlerden 
+//çift ve 4'ün katları olan sayıları toplayıp ekrana basan programı yazıyoruz.
+
+import java.util.Scanner;
+
+public class ciftve4un_kati {
+    public static void main(String[] args){
+        Scanner sc= new Scanner(System.in);
+        int n, total=0;
+
+        do{
+            n=sc.nextInt();
+            if(n%2==0 && n%4==0)
+                total+=n;
+        }while(n%2==0);
+
+        System.out.println("Toplam: " + total);
+    }
+}
